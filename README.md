@@ -22,14 +22,14 @@ How to use "run_analysis.R"
 
 The program contains the following steps
 
-.Step0 Download data file from website
-. Merges the training and the test sets to create one data set 
-2. Extracts only the measurements on the mean and standard deviation for each measurement
-3. Uses descriptive activity names to name the activities in the data set
-4. Appropriately labels the data set with descriptive variable names, and output as "UCI_HAR_Dat_Tidy1.txt"
-5. Creates a second, independent tidy data set with the average of each variable for each activity and each subject, and output as "UCI_HAR_Dat_Tidy2.txt"
+1. Download data file from website
+2. Merges the training and the test sets to create one data set 
+3. Extracts only the measurements on the mean and standard deviation for each measurement
+4. Uses descriptive activity names to name the activities in the data set
+5. Appropriately labels the data set with descriptive variable names, and output as "UCI_HAR_Dat_Tidy1.txt"
+6. Creates a second, independent tidy data set with the average of each variable for each activity and each subject, and output as "UCI_HAR_Dat_Tidy2.txt"
 
-The program will download data file from website and unzip it to a subfolder "UCI HAR Dataset" under your current working     folder. If you have done so, please change your working folder to where it contains the unzipped data files and run start from Step 1.
+The program will download data file from website and unzip it to a subfolder "UCI HAR Dataset" under your current working     folder. If you have done so, please change your working folder to where it contains the unzipped data files and run start from Step 2.
 
 
 How to use the "CodeBook.md"
