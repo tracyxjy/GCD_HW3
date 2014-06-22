@@ -13,7 +13,7 @@
 
 
 #
-# Preparation: download data file from website to your working folder and unzip,
+# 1. download data file from website to your working folder and unzip,
 # change working directory to its sub-folder where data are stored.
 #
 
@@ -28,7 +28,7 @@ setwd(dir)
 
 
 #
-# 1. Merges the training and the test sets to create one data set 
+# 2. Merges the training and the test sets to create one data set 
 #
 
 # read in test data sets
@@ -67,7 +67,7 @@ names(UCI_HAR_Dat1) = col_names
 
 
 #
-# 2. Extracts only the measurements on the mean and standard deviation for each measurement
+# 3. Extracts only the measurements on the mean and standard deviation for each measurement
 #
 
 
@@ -85,7 +85,7 @@ UCI_HAR_Dat2<-UCI_HAR_Dat1[ ,c(1,2,col_MeanStd)]
 
 
 #
-# 3.Uses descriptive activity names to name the activities in the data set
+# 4.Uses descriptive activity names to name the activities in the data set
 #
 
 activity_labels <- read.table(paste(getwd(), "activity_labels.txt", sep="/"))
@@ -99,7 +99,7 @@ UCI_HAR_Dat3$Activity <- factor(UCI_HAR_Dat3$Activity,
 
 
 #
-# 4. Appropriately labels the data set with descriptive variable names
+# 5. Appropriately labels the data set with descriptive variable names
 #
 
 
@@ -121,7 +121,7 @@ write.table(tidy_dat1,"UCI_HAR_Dat_Tidy1.txt",
 
 
 #
-# 5. Creates a second, independent tidy data set with the average of 
+# 6. Creates a second, independent tidy data set with the average of 
 #    each variable for each activity and each subject
 #
 
