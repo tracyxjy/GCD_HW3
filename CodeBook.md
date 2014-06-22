@@ -15,7 +15,9 @@ The sensor signals (accelerometer and gyroscope) were pre-processed by applying 
 
 Variable Description
 --------------------
-The tidy data 'UCI_HAR_Dat_Tidy1.txt' includes in total of 69 variables:
+The raw data variable description can be found in the "features_info.txt" in the unzipped folder.
+
+The output tidy data 'UCI_HAR_Dat_Tidy1.txt' includes in total of 69 variables:
 
 1. "Data_Des": describe data source from the test data (as "test") or the training data (as "train")
 2. "Subject": number 1-30 identifying the volunteers performing the experiment
@@ -47,7 +49,7 @@ The tidy data 'UCI_HAR_Dat_Tidy1.txt' includes in total of 69 variables:
 The complete list of variables of each feature vector is available in 'features.txt'
 
 
-The tidy data 'UCI_HAR_Dat_Tidy2.txt' summarizes the average of all feature varaibles for each activity and each subject from 'UCI_HAR_Dat_Tidy1.txt'. It includes all the variables above except the first variable "Data_Des".
+The output tidy data 'UCI_HAR_Dat_Tidy2.txt' summarizes the average of all feature varaibles for each activity and each subject from 'UCI_HAR_Dat_Tidy1.txt'. It includes all the variables above except the first variable "Data_Des".
 
 Clean data steps:
 -----------------
