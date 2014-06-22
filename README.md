@@ -1,10 +1,10 @@
 
 
 Getting and Cleaning Data - Course Project
-
+===========================================
 
 Objective:
-==========
+-------------
 Learn to collect, work with and clean a data set. The goal is to prepare tidy data that can be used for later analysis. The data is about a study of the Human Activity Recognition Using Smartphone. It is built from the recordings of 30 subjects performing activities of daily living (ADL) measured by a waist-mounted Samsung Galaxy S smart phone. The data linked to from the course website represent data collected from the accelerometers from the Samsung Galaxy S smartphone. 
 
 A full description is available at the site where the data was obtained:
@@ -16,7 +16,7 @@ Data can be donwloaded from:
 
 
 How to use the "run_analysis.R"
-====================
+--------------------------------
 
 The program contains the following steps
 
@@ -31,6 +31,6 @@ The program will download data file from website and unzip it to a subfolder "UC
 
 
 How to use the "CodeBook.md"
-====================
+------------------------------
 
 "CodeBook.md" provides details on the description of the variables, the data, and how did I clean the datasets.
