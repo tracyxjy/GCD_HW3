@@ -17,9 +17,9 @@ Variable Description
 --------------------
 The tidy data includes the following variables:
 
-[1] "subject": number 1-30 identifying the volunteers performing the experiment
-
-[2] "activity": one of 6 physical activities (walking, walking upstairs, walking downstairs, sitting, standing, laying). These are defined in the 'activity_labels.txt' file provided.
+1. "Data_Des": describe data from the test data (as "test") or the training data (as "train")
+2. "Subject": number 1-30 identifying the volunteers performing the experiment
+3. "Activity": one of 6 physical activities (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING). These are defined in the 'activity_labels.txt' file provided.
 
 Averages of the following metrics, with the following naming rules: 
 • begins with 't' <-> Time Domain signals 
