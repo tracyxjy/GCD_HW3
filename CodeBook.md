@@ -22,27 +22,27 @@ The tidy data includes in total of 69 variables:
 3. "Activity": one of 6 physical activities: WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, and LAYING. 
 4. The rest of 66 variables follow name convention as: <'t'/'f'><'Body'/'Gravity'><'Acc'/'Gryo'><''/Jerk><''/Mag><''/'-XYZ'>
 
-    ** begin with:
-        - 't' <-> Time Domain signals 
-        - 'f' <-> Frequency Domain signals 
+    * begin with:
+        * 't' <-> Time Domain signals 
+        * 'f' <-> Frequency Domain signals 
     * follow with:
-        - 'Body'   <-> body signals
-        - 'Gravity'<-> gravity signals
+        * 'Body'   <-> body signals
+        * 'Gravity'<-> gravity signals
     * follow with:
-        - 'Acc'    <-> accelerometer signals 
-        - 'Gyro'   <-> gyroscope signals 
+        * 'Acc'    <-> accelerometer signals 
+        * 'Gyro'   <-> gyroscope signals 
     * follow with:
-        - ''       <-> none
-        - 'Jerk'   <-> Jerk signals 
+        * ''       <-> none
+        * 'Jerk'   <-> Jerk signals 
     * follow with:
-        - ''       <-> none
-        - 'Mag'    <-> the magnitude of signals using the Euclidean norm
+        * ''       <-> none
+        * 'Mag'    <-> the magnitude of signals using the Euclidean norm
     * follow with:
-        - ''       <-> none
-        - '-XYZ'   <-> denote 3-axial signals in the X, Y and Z directions
+        * ''       <-> none
+        * '-XYZ'   <-> denote 3-axial signals in the X, Y and Z directions
     * follow with:
-        - '_mean'  <-> the mean value of the signal
-        - '_std'   <-> the standard deviation of the signal
+        * '_mean'  <-> the mean value of the signal
+        * '_std'   <-> the standard deviation of the signal
 
 The complete list of variables of each feature vector is available in 'features.txt'
 
