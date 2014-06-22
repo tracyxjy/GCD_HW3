@@ -15,49 +15,35 @@ The sensor signals (accelerometer and gyroscope) were pre-processed by applying 
 
 Variable Description
 --------------------
-The tidy data includes the following variables:
+The tidy data includes in total of 69 variables:
 
-1. "Data_Des": describe data from the test data (as "test") or the training data (as "train")
+1. "Data_Des": describe data source from the test data (as "test") or the training data (as "train")
 2. "Subject": number 1-30 identifying the volunteers performing the experiment
-3. "Activity": one of 6 physical activities (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING). These are defined in the 'activity_labels.txt' file provided.
+3. "Activity": one of 6 physical activities: WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, and LAYING. 
+4. The rest of 66 variables follow name convention as: <'t'/'f'><'Body'/'Gravity'><'Acc'/'Gryo'><''/Jerk><''/Mag><''/'-XYZ'>
+    • begin with:
+        - 't' <-> Time Domain signals 
+        - 'f' <-> Frequency Domain signals 
+    • follow with:
+        - 'Body'   <-> body signals
+        - 'Gravity'<-> gravity signals
+    • follow with:
+        - 'Acc'    <-> accelerometer signals 
+        - 'Gyro'   <-> gyroscope signals 
+    • follow with:
+        - ''       <-> none
+        - 'Jerk'   <-> Jerk signals 
+    • follow with:
+        - ''       <-> none
+        - 'Mag'    <-> the magnitude of signals using the Euclidean norm
+    • follow with:
+        - ''       <-> none
+        - '-XYZ'   <-> denote 3-axial signals in the X, Y and Z directions
+    • follow with:
+        - '_mean'  <-> the mean value of the signal
+        - '_std'   <-> the standard deviation of the signal
 
-Averages of the following metrics, with the following naming rules: 
-• begins with 't' <-> Time Domain signals 
-
-•begins with 'f' <-> Frequency Domain signals 
-
-
-•Acc <-> Acceleration signals 
-
-
-•Gyro <-> Gyroscope signals 
-
-
-•Body <-> Body signals 
-
-
-•Gravity <-> gravity signals 
-
-
-•Jerk <-> Jerk signals 
-
-
-•Mag <-> magnitude of signals by Euclidean Norm 
-
-
-•mean <-> Mean
-
-
-•std <-> Standard Deviation
-
-
-•X <-> the axis of the measurement is X axis
-
-• Y <-> the axis of the measurement is Y axis
-• Z <-> the axis of the measurement is Z axis
-
-alt text
-
+The complete list of variables of each feature vector is available in 'features.txt'
 
 
 
