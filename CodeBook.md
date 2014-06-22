@@ -15,7 +15,7 @@ The sensor signals (accelerometer and gyroscope) were pre-processed by applying 
 
 Variable Description
 --------------------
-The raw data variable description can be found in the "features_info.txt" in the unzipped folder.
+The raw data variable description can be found in the "features_info.txt" on your web data unzipped folder.
 
 The output tidy data 'UCI_HAR_Dat_Tidy1.txt' includes in total of 69 variables:
 
