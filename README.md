@@ -32,5 +32,6 @@ The program contains the following steps
 The program will download data file from website and unzip it to a subfolder "UCI HAR Dataset" under your current working     folder. If you have done so, please change your working folder to where it contains the unzipped data files and run start from Step 2.
 
 
-"CodeBook.md" provides details on the description of the variables, the data, and what functions to use in cleaning the datasets.
-"variables.txt" provides all the variables in the "UCI_HAR_Dat_Tidy1.txt". "UCI_HAR_Dat_Tidy2.txt" has the same except the first variable.
+<b>"CodeBook.md"</b> provides details on the description of the variables, the data, and what functions to use in cleaning the datasets.
+
+<b>"variables.txt"</b> provides all the variables in the "UCI_HAR_Dat_Tidy1.txt". "UCI_HAR_Dat_Tidy2.txt" has the same except the first variable.
