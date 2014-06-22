@@ -32,7 +32,4 @@ The program contains the following steps
 The program will download data file from website and unzip it to a subfolder "UCI HAR Dataset" under your current working     folder. If you have done so, please change your working folder to where it contains the unzipped data files and run start from Step 2.
 
 
-How to use the "CodeBook.md"
-------------------------------
-
-"CodeBook.md" provides details on the description of the variables, the data, and how did I clean the datasets.
+"CodeBook.md" provides details on the description of the variables, the data, and what functions to use in cleaning the datasets.
