@@ -14,18 +14,18 @@ Enter file contents here# Getting and Cleaning Data Course Project
 
 
 
-# Change the working directory to where you may store the data 
-setwd("D:/Coursera/Getting and Cleaning Data/HW3")
-
-
 #
-# Preparation: download data file 
+# Preparation: download data file from website to your working folder and unzip,
+# change working directory to its sub-folder where data are stored.
 #
 
-
+getwd()
 fileUrl<-"https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
 file<-download.file(fileUrl,"UCI_HAR_Dataset.zip")
 unzip("UCI_HAR_Dataset.zip")
+
+dir = "UCI HAR Dataset"
+setwd(dir)
 
 
 #
