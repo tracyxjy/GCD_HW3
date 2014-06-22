@@ -2,7 +2,7 @@
 
 # Objective:
 # Create a tidy data set for the Human Activity Recognition Using Smartphonese Data Set, 
-# built from the recordings of 30 subjects performing activities of daily living (ADL) 
+# built from the recordings of 30 volunteers performing activities of daily living (ADL) 
 # measured by a waist-mounted Samsung Galaxy S smart phone.
 
 # A full description is available at the site where the data was obtained:
@@ -11,21 +11,19 @@
 # Data can be donwloaded from:
 #   https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip 
 
-
 #
 # 1. download data file from website to your working folder and unzip,
 # change working directory to its sub-folder where data are stored.
 #
 
 getwd()
+setwd("D:/Coursera/Getting and Cleaning Data/HW3")
 fileUrl<-"https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
 file<-download.file(fileUrl,"UCI_HAR_Dataset.zip")
 unzip("UCI_HAR_Dataset.zip")
 
 dir = "UCI HAR Dataset"
 setwd(dir)
-
-
 
 #
 # 2. Merges the training and the test sets to create one data set 
@@ -37,7 +35,10 @@ test_subject<-read.table(paste(getwd(), "test", "subject_test.txt", sep="/"))   
 test_X<-read.table(paste(getwd(), "test", "X_test.txt", sep="/"))   # Test set
 test_y<-read.table(paste(getwd(), "test", "y_test.txt", sep="/"))   # Test labels
 
-test_dat <- cbind(test_subject,test_y,test_X)     # Combine
+dim(test_dat)
+data_des<-rep("test",nrow(test_dat))
+
+test_dat <- cbind(data_des,test_subject,test_y,test_X)     # Combine
 
 
 # read in training data sets
@@ -46,7 +47,11 @@ train_subject<-read.table(paste(getwd(), "train", "subject_train.txt", sep="/"))
 train_X<-read.table(paste(getwd(), "train", "X_train.txt", sep="/"))        # Training set
 train_y<-read.table(paste(getwd(), "train", "y_train.txt", sep="/"))        # Training labels
 
-train_dat<-cbind(train_subject,train_y,train_X)   # Combine
+dim(train_dat)
+data_des<-rep("train",nrow(train_dat))
+
+train_dat<-cbind(data_des,train_subject,train_y,train_X)   # Combine
+
 
 
 # merge the training and the test sets into one dataset
@@ -55,13 +60,13 @@ UCI_HAR_Dat1 = rbind(test_dat, train_dat)
 
 
 # check subjects an activities
-length(unique(UCI_HAR_Dat1[,1])) #Subject ranges from 1 to 30
-length(unique(UCI_HAR_Dat1[,2])) #Activities ranges from 1 to 6
+length(unique(UCI_HAR_Dat1[,2])) #Subject ranges from 1 to 30
+length(unique(UCI_HAR_Dat1[,3])) #Activities ranges from 1 to 6
 
 
 # add column names using "feature.txt" data
 features = read.table(paste(getwd(), "features.txt", sep="/"))
-col_names = c("Subject", "Activity", levels(features$V2))
+col_names = c("Data_Des","Subject", "Activity", levels(features$V2))
 
 names(UCI_HAR_Dat1) = col_names
 
@@ -81,7 +86,7 @@ col_std <-grep("std()",col_names, fixed=TRUE)
 col_MeanStd = sort(c(col_mean, col_std))
 
 # Get the subset of "UCI_HAR_Dat1" including only interested variables
-UCI_HAR_Dat2<-UCI_HAR_Dat1[ ,c(1,2,col_MeanStd)]
+UCI_HAR_Dat2<-UCI_HAR_Dat1[ ,c(1,2,3,col_MeanStd)]
 
 
 #
@@ -126,7 +131,7 @@ write.table(tidy_dat1,"UCI_HAR_Dat_Tidy1.txt",
 #
 
 # Calculate the mean of each variable by subject and activity
-tidy_dat2 <- aggregate(tidy_dat1[,3:ncol(tidy_dat1)],
+tidy_dat2 <- aggregate(tidy_dat1[,4:ncol(tidy_dat1)],
                        by=list(subject=tidy_dat1$Subject,
                        activity=tidy_dat1$Activity),
                        FUN=mean)
