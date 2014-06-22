@@ -12,9 +12,6 @@
 #   https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip 
 
 
-
-
-
 #
 # Preparation: download data file from website to your working folder and unzip,
 # change working directory to its sub-folder where data are stored.
