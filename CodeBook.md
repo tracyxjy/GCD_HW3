@@ -40,11 +40,13 @@ The output tidy data 'UCI_HAR_Dat_Tidy1.txt' includes in total of 69 variables:
          - '', none
          - 'Mag', the magnitude of signals using the Euclidean norm
     * follow with:
-         - '', none
-         - '-XYZ', denote 3-axial signals in the X, Y and Z directions
-    * follow with:
          - '_mean', the mean value of the signal
          - '_std', the standard deviation of the signal
+    * follow with:
+         - '', none
+         - '-X', denote X-axial signals
+         - '-Y', denote Y-axial signals
+         - '-Z', denote Z-axial signals
 
 All the variable names can be found in the "variables.txt" in this repo.
 
