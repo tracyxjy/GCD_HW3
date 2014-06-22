@@ -1,4 +1,4 @@
-Enter file contents here"Data_Des"
+"Data_Des"
 "Subject"
 "Activity"
 "fBodyAcc_mean_X"
