@@ -33,3 +33,4 @@ The program will download data file from website and unzip it to a subfolder "UC
 
 
 "CodeBook.md" provides details on the description of the variables, the data, and what functions to use in cleaning the datasets.
+"variables.txt" provides all the variables in the "UCI_HAR_Dat_Tidy1.txt". "UCI_HAR_Dat_Tidy2.txt" has the same except the first variable.
