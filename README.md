@@ -12,7 +12,7 @@ The data is about a study of the Human Activity Recognition Using Smartphone. It
 A full description is available at the site where the data was obtained:
 http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
 
-Data can be donwloaded from:
+Data can be donwloaded from:                                             
 https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip 
 
 
