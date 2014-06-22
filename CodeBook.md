@@ -21,25 +21,26 @@ The tidy data includes in total of 69 variables:
 2. "Subject": number 1-30 identifying the volunteers performing the experiment
 3. "Activity": one of 6 physical activities: WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, and LAYING. 
 4. The rest of 66 variables follow name convention as: <'t'/'f'><'Body'/'Gravity'><'Acc'/'Gryo'><''/Jerk><''/Mag><''/'-XYZ'>
-    • begin with:
+
+    * begin with:
         - 't' <-> Time Domain signals 
         - 'f' <-> Frequency Domain signals 
-    • follow with:
+    * follow with:
         - 'Body'   <-> body signals
         - 'Gravity'<-> gravity signals
-    • follow with:
+    * follow with:
         - 'Acc'    <-> accelerometer signals 
         - 'Gyro'   <-> gyroscope signals 
-    • follow with:
+    * follow with:
         - ''       <-> none
         - 'Jerk'   <-> Jerk signals 
-    • follow with:
+    * follow with:
         - ''       <-> none
         - 'Mag'    <-> the magnitude of signals using the Euclidean norm
-    • follow with:
+    * follow with:
         - ''       <-> none
         - '-XYZ'   <-> denote 3-axial signals in the X, Y and Z directions
-    • follow with:
+    * follow with:
         - '_mean'  <-> the mean value of the signal
         - '_std'   <-> the standard deviation of the signal
 
