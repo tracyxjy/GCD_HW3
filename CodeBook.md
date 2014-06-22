@@ -54,20 +54,19 @@ Clean data steps:
 
 2. Merges the training and the test sets to create one data set.
    * Read in text data files 'subject_test.txt','X_test.txt', and 'y_test.txt' into data tables
-   * Create a data description to notify it is from test data set or training data st
-   * Use cbind() to combine data_des, subject data, activity data (y), and measurement data (X) from both the test datasets and training datasets. 
-   * Use rbind() to combine test data and training data. 
-   * add feature name from "feature.txt" file
+   * Create a data description to notify it is from test data set or training data set
+   * Use cbind() to combine data_des, subject, activity (y), and measurement data (X) from both the test and training data
+   * Use rbind() to combine test data and training data
+   * Add column name from "feature.txt" file
 
 3. Extracts only the measurements on the mean and standard deviation for each measurement. 
-   * use grep() function to select the colunms that only contains mean() and std(). Note: the meanFreq() is not included in my list.
+   * Use grep() function to select the colunms that only contains mean() and std(). 
 
 4. Uses descriptive activity names to name the activities in the data set.
-   * the labels for the six activities can be found from "activity_labels.txt". The "_" between words in label column was removed.
+   * The labels for the six activities can be found from "activity_labels.txt". 
 
 5. Appropriately labels the data set with descriptive variable names. 
-   * the column names should not include "-" or "()", because R interprets the "-" as an operator, "()" as a function call. Therefore, change the dash "-" to underline "_" and remove the "()" in the variable names.
-   * this could be done by sub() function.
+   * Use sub() to change the dash "-" to underline "_" and remove the "()" in the variable names.
 
 6. Creates a second, independent tidy data set with the average of each variable for each activity and each subject.
-* use aggregate() to get the average of the 66 variables by subjects and activities. The second tidy data contains 180 rows (= 30 subjects * 6 activities) and 68 columns (="Subject" + "Activity" + 66 summary variables). 
+* Use aggregate() to get the average of the 66 variables by subjects and activities. 
