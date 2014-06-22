@@ -20,24 +20,24 @@ The tidy data includes in total of 69 variables:
 1. "Data_Des": describe data source from the test data (as "test") or the training data (as "train")
 2. "Subject": number 1-30 identifying the volunteers performing the experiment
 3. "Activity": one of 6 physical activities: WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, and LAYING. 
-4. The rest of 66 variables follow name convention as: <'t'/'f'><'Body'/'Gravity'><'Acc'/'Gryo'><''/Jerk><''/Mag><''/'-XYZ'>
+4. The rest of 66 variables follow name convention as:
 
-    * begin with:
-        * 't' <-> Time Domain signals 
-        * 'f' <-> Frequency Domain signals 
-    * follow with:
+    - begin with:
+        - 't' <-> Time Domain signals 
+        - 'f' <-> Frequency Domain signals 
+    - follow with:
         * 'Body'   <-> body signals
         * 'Gravity'<-> gravity signals
-    * follow with:
+    - follow with:
         * 'Acc'    <-> accelerometer signals 
         * 'Gyro'   <-> gyroscope signals 
-    * follow with:
+    - follow with:
         * ''       <-> none
         * 'Jerk'   <-> Jerk signals 
-    * follow with:
+    - follow with:
         * ''       <-> none
         * 'Mag'    <-> the magnitude of signals using the Euclidean norm
-    * follow with:
+    - follow with:
         * ''       <-> none
         * '-XYZ'   <-> denote 3-axial signals in the X, Y and Z directions
     * follow with:
