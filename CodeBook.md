@@ -22,7 +22,7 @@ The tidy data includes in total of 69 variables:
 3. "Activity": one of 6 physical activities: WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, and LAYING. 
 4. The rest of 66 variables follow name convention as: <'t'/'f'><'Body'/'Gravity'><'Acc'/'Gryo'><''/Jerk><''/Mag><''/'-XYZ'>
 
-    * begin with:
+    ** begin with:
         - 't' <-> Time Domain signals 
         - 'f' <-> Frequency Domain signals 
     * follow with:
