@@ -46,9 +46,6 @@ The output tidy data 'UCI_HAR_Dat_Tidy1.txt' includes in total of 69 variables:
          - '_mean', the mean value of the signal
          - '_std', the standard deviation of the signal
 
-The complete list of variables of each feature vector is available in 'features.txt'
-
-
 The output tidy data 'UCI_HAR_Dat_Tidy2.txt' summarizes the average of all feature varaibles for each activity and each subject from 'UCI_HAR_Dat_Tidy1.txt'. It includes all the variables above except the first variable "Data_Des".
 
 Clean data steps:
